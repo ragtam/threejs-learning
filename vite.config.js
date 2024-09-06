@@ -1,5 +1,11 @@
 import { defineConfig } from 'vite'
 
-export default defineConfig({
-    base: '/threejs-learning/'
+export default defineConfig( ({ command }) => {
+    if(command === 'build') {
+        return {
+            base: '/threejs-learning/'
+        }
+    }
+
+    return {};
 })
