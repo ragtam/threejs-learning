@@ -33,7 +33,7 @@ export function drawLine() {
 
    const loader = new GLTFLoader();
    loader.load(
-       '/porsche/scene.gltf',  // replace with the correct path to your .gltf file
+       '/threejs-learning/porsche/scene.gltf',  // replace with the correct path to your .gltf file
        function (gltf) {
             model = gltf.scene;
            scene.add(gltf.scene);
