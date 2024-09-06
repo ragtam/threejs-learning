@@ -6,6 +6,5 @@ export default defineConfig( ({ command }) => {
             base: '/threejs-learning/'
         }
     }
-
     return {};
 })
