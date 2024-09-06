@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { BASE_URL } from './environment';
 
 const initialCameraPosition = new THREE.Vector3(3, 0, 5);
 
@@ -33,7 +34,7 @@ export function drawLine() {
 
    const loader = new GLTFLoader();
    loader.load(
-       '/threejs-learning/porsche/scene.gltf',  // replace with the correct path to your .gltf file
+       `${BASE_URL}porsche/scene.gltf`,  // replace with the correct path to your .gltf file
        function (gltf) {
             model = gltf.scene;
            scene.add(gltf.scene);
