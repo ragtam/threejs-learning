@@ -8,6 +8,7 @@ const initialCameraPosition = new THREE.Vector3(3, 0, 5);
 export function drawLine() {
    // Scene setup
    const scene = new THREE.Scene();
+   scene.background = new THREE.Color(0x3b3b3b);
 
    // Camera setup
    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -23,10 +24,10 @@ export function drawLine() {
    document.body.appendChild(renderer.domElement);
 
    // Lighting setup
-   const light = new THREE.AmbientLight(0x404040, 1); // soft white light
+   const light = new THREE.AmbientLight(0x404040, 3);
    scene.add(light);
 
-   const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+   const directionalLight = new THREE.DirectionalLight(0xffffff, 8);
 
    scene.add(directionalLight);
 

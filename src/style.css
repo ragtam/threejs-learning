@@ -1,4 +1,6 @@
 body {
+    font-family: 'Montserrat';
+    color: white;
     height: 300vh;
 }
 
@@ -8,4 +10,19 @@ body {
     top: 0;
     right: 0;
     bottom: 0;
+    z-index: -1;
+}
+
+.landing-page__header {
+    h1 {
+        font-size: 24rem;
+    }
+}
+
+nav {
+    border-bottom: 1px solid #8c8c8c;
+}
+
+nav .title {
+    display: flex;
 }
